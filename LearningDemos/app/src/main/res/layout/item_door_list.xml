@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_door_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="12幢3单元门"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_door_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="闭合"
+            android:textSize="16dp"
+            android:textColor="@drawable/selector_textcolor_enable_gray_blue"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/shape_stroke_bulue_gray"
+        android:textColor="@drawable/selector_textcolor_enable_blue_gray"
+        android:id="@+id/btn_option_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
+        android:text="开门"
+        android:textSize="16dp" />
+
+</RelativeLayout>

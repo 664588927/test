@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- colors -->
+    <color name="primary">#785447</color>
+    <color name="primaryDark">#5B3F36</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="AppTheme">
+        //半透明-->设置成dialog主题
+        <item name="android:windowIsTranslucent">true</item>
+        //页面的背景颜色
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+
+    </style>
+
+    <!-- animation 样式 -->
+
+
+    <style name="simple_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="activityAnimationAlpha" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/alpha_2_blur</item>
+        <item name="android:activityOpenExitAnimation">@anim/alpha_2_transparency</item>
+        <item name="android:activityCloseEnterAnimation">@anim/alpha_2_blur</item>
+        <item name="android:activityCloseExitAnimation">@anim/alpha_2_transparency</item>
+    </style>
+    <style name="alpha" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activityAnimationAlpha</item>
+    </style>
+
+</resources>

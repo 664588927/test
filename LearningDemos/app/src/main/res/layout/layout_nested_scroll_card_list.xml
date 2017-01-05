@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gogenius.learningdemos.view.FlyCardVie
+        android:id="@+id/first"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#DD6B55"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:layout_behavior="com.gogenius.learningdemos.coordinatorlayout.behavior.EasyBehavior" />
+
+    <com.gogenius.learningdemos.view.FlyCardVie
+        android:id="@+id/second"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#ff009688"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:layout_behavior="com.gogenius.learningdemos.coordinatorlayout.behavior.EasyBehavior" />
+
+    <com.gogenius.learningdemos.view.FlyCardVie
+        android:id="@+id/third"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#FFFF00"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:layout_behavior="com.gogenius.learningdemos.coordinatorlayout.behavior.EasyBehavior" />
+
+    <com.gogenius.learningdemos.view.FlyCardVie
+        android:id="@+id/fourth"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#6B8E23"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:layout_behavior="com.gogenius.learningdemos.coordinatorlayout.behavior.EasyBehavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "com.gogenius.learningdemos"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', '../galleryfinal/proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro','../galleryfinal/proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    //    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'com.android.support:cardview-v7:23.+'
+    compile 'com.android.support:design:23.+'
+    //OkHttp
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    //Gson
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile project(':XRefreshLib')
+    compile 'com.youth.banner:banner:1.4'
+    //图片加载器
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //图片选择器
+    //    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    //    compile 'com.android.support:support-v4:23.1.1'
+    compile project(':galleryfinal')
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.alibaba:fastjson:1.2.12'
+    //    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/TrineaLib.jar')
+    compile project(':PullToRefreshSwipeMenuListView')
+//    compile 'org.testng:testng:6.9.6'
+//    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.8@aar'
+}

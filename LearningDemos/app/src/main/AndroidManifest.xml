@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gogenius.learningdemos"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--在SDCard中创建与删除文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!--往SDCard写入数据权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--从SDCard读取数据权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--调用系统摄像头-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".swipemenulistview.SwipeMenuListViewActivity"></activity>
+
+        <activity android:name=".ItemTouch.ItemTouchActivity"></activity>
+
+        <activity android:name=".coordinatorlayout.behavior.BehaviorActivity"></activity>
+
+        <activity
+            android:name=".designnewfeature.DesignNewFeatureActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".designnewfeature.ProjectDemoActivity"></activity>
+
+        <activity android:name=".TabLayyout.TabLayoutActivity"></activity>
+
+        <activity android:name=".cardlist.CardListActivity"></activity>
+
+        <activity android:name=".parallax.ParallaxActivity"></activity>
+
+        <activity android:name=".keywordsynchronized.SynchronizedActivity"></activity>
+
+        <activity android:name=".okhttp.OkHttpActivity"></activity>
+
+        <activity android:name=".dialogUI.DialogMainActivity"></activity>
+
+        <activity android:name=".action.FeedbackActivity"></activity>
+
+        <activity android:name=".action.PraiseActivity"></activity>
+
+        <activity android:name=".xRefreshView.XRefreshViewActivity"></activity>
+
+        <activity android:name=".menuscroll.MenuScrollActivity"></activity>
+
+        <activity android:name=".banner.BannerActivity"></activity>
+
+        <activity android:name=".gallery.GalleryActivity"></activity>
+
+        <activity android:name=".pathAnimation.PathAnimationActivity"></activity>
+
+        <activity android:name=".game2048.Game2048Activity"></activity>
+
+        <activity android:name=".velocitytracker.VelocityTrackerActivity"></activity>
+        <activity
+            android:name=".circleimage.CircleImageViewActivity"
+            android:theme="@style/activityAnimationAlpha"></activity>
+
+        <activity
+            android:name=".ripple.RippleActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".sortListView.SortListViewActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".gallery.GalleryDisplayActivity"
+            android:theme="@style/AppDialogTheme"></activity>
+        <activity android:name=".gesture.GestureActivity"></activity>
+
+
+        <activity
+            android:name=".dialogUI.ActionSheet"
+            android:theme="@style/AppDialogTheme"></activity>
+
+
+        <service android:name=".multiService.LocalService"></service>
+
+        <service
+            android:name=".multiService.RemoteService"
+            android:process=":RemoteService"></service>
+
+        <activity android:name=".PullToRefreshSwipeMenuListView.PullToRefreshSwipeMenuListViewActivity"></activity>
+
+        <activity android:name=".action.SearchActivity"></activity>
+        <activity
+            android:name=".camera.CameraActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FlyingLetterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".picker.PickerActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".matrix.MatrixActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--<receiver android:name=".receiver.USBReceiver">-->
+        <!--<intent-filter android:priority="800">-->
+        <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>-->
+        <!--<action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>-->
+        <!--<action android:name="device"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>
